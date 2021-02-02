@@ -9,19 +9,58 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
+  gap: 1em;
 }
 
-/*navbar styles */
+/*navbar/header styles */
 nav a {
   text-decoration: none;
+  padding: 5px;
 }
-.nav-top {
-  display: flex;
-  justify-content: space-around;  
-  grid-column: 1/-1;
+.left-vertical {
+    text-align: center;  
+  list-style: none;
+  margin: 0;
+  padding: 0;  
+}
+.top-right {
+  display: flex;  
+  justify-content: space-around;
+  align-self: center;      
+  list-style: none;
+  margin: 0;
+  grid-column: 4/-1;
   grid-row: 1/2;
+  border: 1px solid green;    
 }
-.nav-left {
+.top-right div {
+  display: inline-block;
+  align-self: center;
+}
+
+.left-vertical {
+  display: flex;      
+  justify-content: center;
+  align-items: center;
   grid-column: 1/2;
   grid-row: 1/-1;
+  border: 1px solid blue;
+}
+
+@media screen and (min-width: 600px){
+  .top-right{
+    grid-column: 6/-1;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .top-right {
+    grid-column: 7/-1;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .top-right {
+    grid-column: 9/-1;
+  }
 }
