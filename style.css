@@ -1,12 +1,23 @@
+:root {
+  --main-background-color: bisque;
+  --main-color: black;
+}
+
 
 body {
+  background-color: var(--main-background-color);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
 
 /*navbar styles */
+nav a {
+  text-decoration: none;
+}
 .nav-top {
+  display: flex;
+  justify-content: space-around;  
   grid-column: 1/-1;
   grid-row: 1/2;
 }
