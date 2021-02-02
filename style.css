@@ -29,15 +29,13 @@ nav a {
   align-self: center;      
   list-style: none;
   margin: 0;
-  grid-column: 4/-1;
+  grid-column: 1/-1;
   grid-row: 1/2;
   border: 1px solid green;    
 }
-.top-right div {
-  display: inline-block;
-  align-self: center;
+.top-right input{
+  width: 130px;
 }
-
 .left-vertical {
   display: flex;      
   justify-content: center;
@@ -49,18 +47,18 @@ nav a {
 
 @media screen and (min-width: 600px){
   .top-right{
-    grid-column: 6/-1;
+    grid-column: 5/-1;
   }
 }
 
 @media screen and (min-width: 900px){
   .top-right {
-    grid-column: 7/-1;
+    grid-column: 6/-1;
   }
 }
 
 @media screen and (min-width: 1200px){
   .top-right {
-    grid-column: 9/-1;
+    grid-column: 8/-1;
   }
 }
