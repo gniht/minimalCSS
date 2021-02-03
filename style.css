@@ -38,13 +38,6 @@ nav a {
 nav input {
   max-width: 130px;
 }
-.left-vertical {
-  display: flex;      
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/2;  
-  border: 1px solid blue;
-}
 
 .top-center {
   display: flex;  
@@ -56,23 +49,27 @@ nav input {
 }
 
 /* content and cards */
-.wide-full {
+.wide-full {  
   grid-column: 1/-1;  
   background-color: blueviolet;
+  padding: 5px;
 }
 
 .wide-centered {
   grid-column: 2/12;
+  padding: 3px;
 }
 .split-left {
   display: block;
   grid-column: 2/12;
   background-color: lavender;
+  padding: 3px;  
 }
 .split-right {
   display: block;
   grid-column: 2/12;
   background-color: red;
+  padding: 3px;
 }
 
 
