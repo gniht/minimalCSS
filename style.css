@@ -1,6 +1,8 @@
 :root {
   --main-background-color: bisque;
   --main-color: black;
+  --secondary-background-color: blueviolet;
+  --secondary-text: white;
 }
 
 
@@ -12,13 +14,23 @@ body {
   gap: 1em;
 }
 
+header {  
+  min-height: 4vw;
+  background-color:var(--secondary-background-color);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/-1;    
+  gap: 1em;  
+}
+
 /*navbar/header styles */
 .nav {
-  align-self: center;
+  align-self: center;  
 }
 
 nav a {
-  text-decoration: none;  
+  text-decoration: none;
+  color: var(--secondary-text);  
   padding: 5px;
 }
 .left-vertical {
@@ -36,23 +48,37 @@ nav a {
   border: 1px solid green;    
 }
 nav input {
+  justify-content: center;
+  align-self: center;
+  text-align: center;
   max-width: 130px;
+  max-height: 1.5em;
+}
+nav button {
+  height: 1.5em;
+  justify-self: center;
+  align-self: center;
+  vertical-align: middle;
+  line-height: normal;
+}
+.search {  
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-.top-center {
-  
-  display: flex;  
+.top-center {  
+  display: flex;    
   justify-content: space-around;        
   list-style: none;
   margin: 0;
-  grid-column: 1/-1;  
-  border: 1px solid green;    
+  grid-column: 1/-1;      
 }
 
 /* content and cards */
 .wide-full {  
   grid-column: 1/-1;  
-  background-color: blueviolet;
+  background-color: var(--secondary-background-color);
   padding: 5px;
 }
 
@@ -70,25 +96,26 @@ nav input {
   display: block;
   grid-column: 2/12;
   background-color: red;
-  padding: 3px;
-}
+  padding: 3px;}
+
+
 
 footer {
+  background-color: var(--secondary-background-color);
   color: var(--secondary-text);
   display: flex;
-  justify-content: center;
-  align-items: center;  
-  position:absolute;
-  bottom: 0;
+  justify-content: center;    
+  position:absolute;  
   width: 100vw;
-  min-height: 8%;
-  border: 1px solid black;
+  min-height: 4vw;  
   padding: 3px;
+  bottom: 0;
   grid-column: 1/-1;  
 }
 
-footer *{
+footer * {
   align-self: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px){
