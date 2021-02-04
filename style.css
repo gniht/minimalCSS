@@ -40,12 +40,13 @@ nav input {
 }
 
 .top-center {
+  
   display: flex;  
   justify-content: space-around;        
   list-style: none;
   margin: 0;
   grid-column: 1/-1;  
-  border: 1px solid green;  
+  border: 1px solid green;    
 }
 
 /* content and cards */
@@ -72,6 +73,23 @@ nav input {
   padding: 3px;
 }
 
+footer {
+  color: var(--secondary-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  position:absolute;
+  bottom: 0;
+  width: 100vw;
+  min-height: 8%;
+  border: 1px solid black;
+  padding: 3px;
+  grid-column: 1/-1;  
+}
+
+footer *{
+  align-self: center;
+}
 
 @media screen and (min-width: 600px){
   /*navbar styles*/
